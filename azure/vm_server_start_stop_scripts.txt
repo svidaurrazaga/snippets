@@ -1,0 +1,30 @@
+<# 
+# powershell azure syntax
+# https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount?view=azps-7.5.0
+#>
+
+<#
+# Version of powershell shouble be PowerShell 7.0.6 LTS, PowerShell 7.1.3, or higher is the recommended version of PowerShell
+# $PSVersionTable.PSVersion
+#>
+
+<#
+ # Install azure package to your current user profile from NuGet
+ # Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
+#>
+
+<#
+ # Starting azure vm
+#
+# Connect-AzAccount -Environment "AzureCloud" -Tenant "GUID" -AccountId "USER@DOMAIN.COM" -Subscription "AZURE SUBSCRIPTION NAME"
+# Select-AzSubscription -SubscriptionName 'SUBSCRIPTION NAME"
+# Start-AzVM -ResourceGroupName "GROUP NAME" -Name "VM NAME"
+#>
+
+<#
+ # Stopping azure vm
+#
+# Connect-AzAccount -Environment "AzureCloud" -Tenant "GUID" -AccountId "USER@DOMAIN.COM" -Subscription "AZURE SUBSCRIPTION NAME"
+# Select-AzSubscription -SubscriptionName 'SUBSCRIPTION NAME"
+# Stop-AzVM -ResourceGroupName "GROUP NAME" -Name "VM NAME"
+#>
