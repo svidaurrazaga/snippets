@@ -1,4 +1,7 @@
 <# 
+# instal powershell
+# https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.5.0
+#
 # powershell azure syntax
 # https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount?view=azps-7.5.0
 #>
