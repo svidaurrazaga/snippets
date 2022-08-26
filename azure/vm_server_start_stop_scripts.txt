@@ -17,15 +17,17 @@
 #>
 
 <#
- # Starting azure vm
-#
+# Starting azure vm under different subscription
+# Logging into Azure
+# Switch subscription
+# Start azure vm
 # Connect-AzAccount -Environment "AzureCloud" -Tenant "GUID" -AccountId "USER@DOMAIN.COM" -Subscription "AZURE SUBSCRIPTION NAME"
 # Select-AzSubscription -SubscriptionName 'SUBSCRIPTION NAME"
 # Start-AzVM -ResourceGroupName "GROUP NAME" -Name "VM NAME"
 #>
 
 <#
- # Stopping azure vm
+# Stopping azure vm
 #
 # Connect-AzAccount -Environment "AzureCloud" -Tenant "GUID" -AccountId "USER@DOMAIN.COM" -Subscription "AZURE SUBSCRIPTION NAME"
 # Select-AzSubscription -SubscriptionName 'SUBSCRIPTION NAME"
