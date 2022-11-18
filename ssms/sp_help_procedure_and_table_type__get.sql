@@ -1,8 +1,15 @@
--- get info on procedure
-sp_help 'schema.proc_name';
+USE dabase_name
+GO
 
+-- get info for database object
+sp_help 'schema.proc_name'
+GO
 
--- Table Type Columns
+-- display object as text
+--sp_helptext 'schema.proc_name'
+--GO
+
+-- return table type columns
 SELECT *
 FROM sys.columns
 WHERE object_id IN (
