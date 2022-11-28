@@ -1,4 +1,4 @@
-USE dabase_name
+USE [db_name]
 GO
 
 -- get info for database object
@@ -14,6 +14,8 @@ SELECT *
 FROM sys.columns
 WHERE object_id IN (
   SELECT type_table_object_id
-  FROM sys.table_types
-  WHERE name = 'table_type_name'
+  FROM 
+	sys.table_types t1 INNER JOIN
+	sys.schemas t2 ON t1.schema_id = t2.schema_id
+  WHERE t1.name = 'table_type_name' and  t2.name = 'schema'
 )
